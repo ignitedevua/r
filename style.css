@@ -1,0 +1,109 @@
+div {
+    /* border: 1px solid lightgreen; */
+}
+
+#total_money {
+    margin-left: 400px;
+}
+
+#total_money::before {
+    content: "$";
+}
+
+.icon {
+    height: 50px !important;
+    width: 150px;
+    background-size: contain;
+    /* background-position: center; */
+    background-image: url("images/army_icons.svg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 750px auto;
+}
+
+.tank {
+    background-position: -550px -85px;
+}
+
+.bmm {
+    background-position: -120px -265px;
+}
+
+.flight {
+    background-position: -550px -625px;
+}
+
+.helicopter {
+    background-position: -550px -535px;
+}
+
+.pushka {
+    background-position: -400px -185px;
+}
+
+.car {
+    background-position: -120px -705px;
+}
+
+.grad {
+    background-position: 20px -355px;
+}
+
+.pvo {
+    background-position: -400px -100px;
+}
+
+.bpla {
+    background-position: -550px -625px;
+}
+
+.disel_car {
+    background-position: 10px -0px;
+}
+
+.ship {
+    background-position: -400px -715px;
+}
+
+.solder_dead {
+    background-position: -400px -623px;
+}
+
+.solder_capt {
+    background-position: -400px -623px;
+}
+
+.inl {
+    display: inline-block;
+}
+
+.item {
+    vertical-align: middle;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.item>div {
+    height: 100%;
+    min-height: 100%;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    overflow: auto;
+}
+
+.item>.name {
+    width: 150px;
+}
+
+.item>.count {
+    width: 100px;
+}
+
+.item>.price {
+    width: 100px;
+}
+
+.item>.price::before {
+    content: "$";
+}
