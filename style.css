@@ -2,8 +2,20 @@ div {
     /* border: 1px solid lightgreen; */
 }
 
+.page {
+    margin: auto;
+    width: 520px;
+    border: 3px solid green;
+    padding: 10px;
+}
+
 #total_money {
-    margin-left: 400px;
+    width: 100px;
+    position: relative;
+    left: 410px;
+    color: rgb(44, 44, 44);
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 #total_money::before {
@@ -14,10 +26,8 @@ div {
     height: 50px !important;
     width: 150px;
     background-size: contain;
-    /* background-position: center; */
     background-image: url("images/army_icons.svg");
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-size: 750px auto;
 }
 
