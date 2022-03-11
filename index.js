@@ -1,4 +1,4 @@
-fetch('stats.json')
+fetch('stats.json?' + Math.random())
     .then(function(response) {
         return response.json();
     })
