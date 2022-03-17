@@ -13,11 +13,8 @@ function layoutData(data) {
     var date_div = document.getElementById("date");
     var money_div = document.getElementById("total_money");
     date_div.innerHTML = data.date;
-
     var total_money = 0;
-
     var mainContainer = document.getElementById("stats");
-    console.log(data);
     for (var i = 0; i < data.list.length; i++) {
 
         var div = document.createElement("div");
@@ -28,7 +25,7 @@ function layoutData(data) {
                 <div class="icon inl ${data.list[i].i}"></div>\
                 <div class="name inl">${data.list[i].t}</div>\
                 <div class="count inl">${data.list[i].c}</div>\
-                <div class="price inl">${price} млн.</div>\
+                <div class="price inl">${price.toFixed(2)} млн.</div>\
             </div>`;
         div = div.children[0];
         mainContainer.appendChild(div);
